@@ -1,0 +1,129 @@
+
+                    ==========Action Request from dekstop app=======
+for login
+{"type":"dologin","message_type":"request","value":{"email":"demo@mail.com","password":"1234"}}
+
+for sign up
+{"type":"dosignup","message_type":"request","value":{"name":"Full Name","email":"demo@mail.com","password":"1234"}}
+
+for group change
+{"type":"group_change","message_type":"request","value":{"id":"35","value":"4"}}
+
+for bidirection change
+ {"type":"bidirection_change","message_type":"request","value":{"id":"35","value":"4"}}
+
+for internet change
+ {"type":"internet_change","message_type":"request","value":{"id":"35","value":"4"}}
+
+for route change
+{"type":"route_change","message_type":"request","value":{"id":"35","value":"4"}}
+
+for gateway change
+{"type":"gateway_change","message_type":"request","value":{"id":"35","value":"4"}}
+
+for server clone
+{"type":"add_server_clone","uid":"2","message_type":"request","value":{"tunnel_id":"35","type":"0","username":"VPN1453112076283893712S","password":"fBMzPR","group":null,"cloud_ip":"5.5.5.5","local_ip":"","real_ip":"1.0.7.255","controller_id":"0","cloud_id":"1","customer_id":"2","status":"0","last_login":"2016-01-18
+15:44:36","traffic":"0","bidirectional_mode":"2","gateway_mode":"0","email":"example@gmail.com","group_id":"3","display_name":"example0309@gmail.com","is_deleted":"0","tunnel_type":"server","location":"13","country":null,"last_updated":"0000-00-00
+00:00:00","no_of_revision":"0","IPAlias":"","internet_tunnel":"0","max_simultaneous_login":"0","servers_ACL":"","internet":"0","route":"0","last_action":"","is_complete_action":"0","is_updated":"0","is_seen":"0","uname":"VPN14539020521982899875S","upass":"BLbJAW"}}
+
+for change tunnel to client
+{"type":"change_tunnel_client","message_type":"request","value":{"id":"36"}}
+
+for change tunnel to server
+{"type":"change_tunnel_server","message_type":"request","value":{"id":"36"}}
+
+for email id change
+{"type":"edit_email","message_type":"request","value":{"id":"36","value":"example@gmail.com"}}
+
+for display name change
+{"type":"edit_display","message_type":"request","value":{"id":"36","value":"example@gmail.com"}}
+
+for location change
+{"type":"change_location","message_type":"request","value":{"id":"36","value":"14"}}
+
+                    ==========end of Action Request from dekstop app=======
+
+                            ==========wampp response data json=======
+
+for login
+{"status":1(/0),"data":"Login Successfull", "type":"login","message_type":"reply","value":{"user_id":"10","email":"demo@mail.com", "token":"some-md5-encrypted-data"}}
+
+for sign up
+{"status":1(/0),"data":"Successfully Registered, Confirm your email to get started","type":"signup","message_type":"reply","value":{}}
+
+
+for group change
+{"status":1,"data":"Your request under process, please wait...","type":"group_change","message_type":"reply","value":{"id":"35","value":"4"}}
+
+for bidirection change
+ {"status":1,"data":"Your request under process, please wait...","type":"bidirection_change","message_type":"reply","value":{"id":"35","value":"4"}}
+
+for internet change
+ {"status":1,"data":"Your request under process, please wait...","type":"internet_change","message_type":"reply","value":{"id":"35","value":"4"}}
+
+for route change
+{"status":1,"data":"Your request under process, please wait...","type":"route_change","message_type":"reply","value":{"id":"35","value":"4"}}
+
+for gateway change
+{"status":1,"data":"Your request under process, please wait...","type":"gateway_change","message_type":"reply","value":{"id":"35","value":"4"}}
+
+for server clone
+{"status":1,"data":"Your request under process, please wait...","type":"add_server_clone","uid":"2","message_type":"reply","value":{"tunnel_id":"35","type":"0","username":"VPN1453112076283893712S","password":"fBMzPR","group":null,"cloud_ip":"5.5.5.5","local_ip":"","real_ip":"1.0.7.255","controller_id":"0","cloud_id":"1","customer_id":"2","status":"0","last_login":"2016-01-18
+15:44:36","traffic":"0","bidirectional_mode":"2","gateway_mode":"0","email":"example@gmail.com","group_id":"3","display_name":"example0309@gmail.com","is_deleted":"0","tunnel_type":"server","location":"13","country":null,"last_updated":"0000-00-00
+00:00:00","no_of_revision":"0","IPAlias":"","internet_tunnel":"0","max_simultaneous_login":"0","servers_ACL":"","internet":"0","route":"0","last_action":"","is_complete_action":"0","is_updated":"0","is_seen":"0","uname":"VPN14539020521982899875S","upass":"BLbJAW"}}
+
+for change tunnel to client
+{"status":1,"data":"Your request under process, please wait...","type":"change_tunnel_client","message_type":"reply","value":{"id":"36"}}
+
+for change tunnel to server
+{"status":1,"data":"Your request under process, please wait...","type":"change_tunnel_server","message_type":"reply","value":{"id":"36"}}
+
+for email id change
+{"status":1,"data":"Your request under process, please wait...","type":"edit_email","message_type":"reply","value":{"id":"36","value":"example@gmail.com"}}
+
+for display name change
+{"status":1,"data":"Your request under process, please wait...","type":"edit_display","message_type":"reply","value":{"id":"36","value":"example@gmail.com"}}
+
+for location change
+{"status":1,"data":"Your request under process, please wait...","type":"change_location","message_type":"reply","value":{"id":"36","value":"14"}}
+
+                    ==========end of wampp response data json=======
+
+                                    ==========after job complete response data json=======
+
+for group change
+{"type":"group_change_result","message_type":"reply","value":{"id":"35","value":"4"}}
+
+for bidirection change
+ {"type":"bidirection_change_result","message_type":"reply","value":{"id":"35","value":"4"}}
+
+for internet change
+ {"type":"internet_change_result","message_type":"reply","value":{"id":"35","value":"4"}}
+
+for route change
+{"type":"route_change_result","message_type":"reply","value":{"id":"35","value":"4"}}
+
+for gateway change
+{"type":"gateway_change_result","message_type":"reply","value":{"id":"35","value":"4"}}
+
+for server clone
+{"type":"add_server_clone_result","uid":"2","message_type":"reply","value":{"tunnel_id":"35","type":"0","username":"VPN1453112076283893712S","password":"fBMzPR","group":null,"cloud_ip":"5.5.5.5","local_ip":"","real_ip":"1.0.7.255","controller_id":"0","cloud_id":"1","customer_id":"2","status":"0","last_login":"2016-01-18
+15:44:36","traffic":"0","bidirectional_mode":"2","gateway_mode":"0","email":"example@gmail.com","group_id":"3","display_name":"example0309@gmail.com","is_deleted":"0","tunnel_type":"server","location":"13","country":null,"last_updated":"0000-00-00
+00:00:00","no_of_revision":"0","IPAlias":"","internet_tunnel":"0","max_simultaneous_login":"0","servers_ACL":"","internet":"0","route":"0","last_action":"","is_complete_action":"0","is_updated":"0","is_seen":"0","uname":"VPN14539020521982899875S","upass":"BLbJAW"}}
+
+for change tunnel to client
+{"type":"change_tunnel_client_result","message_type":"reply","value":{"id":"36"}}
+
+for change tunnel to server
+{"type":"change_tunnel_server_result","message_type":"reply","value":{"id":"36"}}
+
+for email id change
+{"type":"edit_email","message_type":"reply","value":{"id":"36","value":"example@gmail.com"}}
+
+for display name change
+{"type":"edit_display","message_type":"reply","value":{"id":"36","value":"example@gmail.com"}}
+
+for location change
+{"type":"change_location","message_type":"reply","value":{"id":"36","value":"14"}}
+
+                                ==========end of after job complete response data json=======

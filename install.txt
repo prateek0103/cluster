@@ -1,0 +1,25 @@
+1. path of config page
+
+includes/config.php to change the database info.
+
+2. inside socket directory open server.php on the last line
+$Server->wsStartServer('119.18.52.146', 8880);
+change the IP to yours.
+
+3.go to assests/js and open custom.js and on the line no. 9 ( Server = new FancyWebSocket('ws://119.18.52.146:8880');) change the IP to yours.
+
+4. from SSH run the server.php file under socket directory.
+
+
+5.
+on the sql folder the sql dump file is there to get all the tables.
+
+by doing :
+mysql -u root -pPASSWORD
+mysql> create database demovpn;
+mysql> CREATE USER 'demovpn'@'localhost' IDENTIFIED BY 'demo@vpn@456';
+mysql> exit
+root@SVN:/var/www/html/demovpn-new/sql# mysql -u root -pPASSWORD demovpn < demovpn-new.sql
+
+mysql> GRANT ALL PRIVILEGES ON demovpn . * TO 'demovpn'@'localhost';
+

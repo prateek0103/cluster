@@ -1,0 +1,525 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tree Structure</title>
+<link type="text/css" rel="stylesheet" href="css/tree.css" />
+<link type="text/css" rel="stylesheet" href="css/animate.css" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+	<div class="container-fluid">
+    	<div class="container">
+        	<div class="row">
+            	<div class="tree simple">
+                	<div class="head">
+                    	<div class="box width-100 animated slideInLeft">Destination</div>
+                    	<div class="width-150 box-border-left box-border-top height20 dash animated slideInLeft"></div>
+                    	<div class="box width-150 height-50 animated slideInDown"><span>Parent</span></div>
+                        <div class="width-150 box-border-right box-border-top height20 dash animated slideInRight"></div>
+                         <div class="box width-100 animated slideInRight">Source</div>
+                        <div class="clearfix"></div>
+                        <div class="box width-150 no-padding animated bounceIn">
+                        	<span class="txt_one">Deny All</span>
+                            <span class="txt_one no-border_right">Allow All</span>
+                        </div>
+                    </div>
+                    <div class="tree_body text-left">
+                    	<div class="box width100 pull-left text-center animated slideInLeft"><strong>Tools</strong></div>
+                        <div class="series animated slideInRight">
+                        	<div class="row">
+                            	<div class="col-lg-6 col-md-6 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12">
+                                        	<span class="box pull-left padding-3 sp">
+                                            	ANY
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<ul class="u_box">
+                                            	<li><a href="javascript:void(0);" >Internet</a></li>
+                                                <li><a href="javascript:void(0);">Group B</a></li>
+                                                <li><a href="javascript:void(0);">Group A</a></li>
+                                                <li><a href="javascript:void(0);">Controller 1</a></li>
+                                                <li><a href="javascript:void(0);">Server 1</a></li>
+                                                <li><a href="javascript:void(0);" class="last">Client 1</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12">
+                                        	<span class="box pull-right ">
+                                            	SOURCE
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series animated slideInLeft">
+                        	<div class="row">
+                            	<div class="col-lg-6 col-md-6 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12">
+                                        	<span class="box pull-left padding-3 sp">
+                                            	ANY
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<ul class="u_box">
+                                            	<li><a href="javascript:void(0);">Internet</a></li>
+                                                <li><a href="javascript:void(0);">Group B</a></li>
+                                                <li><a href="javascript:void(0);">Group A</a></li>
+                                                <li><a href="javascript:void(0);">Controller 1</a></li>
+                                                <li><a href="javascript:void(0);">Server 1</a></li>
+                                                <li><a href="javascript:void(0);" class="last">Client 1</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12">
+                                        	<span class="box pull-right ">
+                                            	DESTINATION
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="btn btn-primary pull-right sm animated bounceIn">Show Advanced Mode</a>
+                </div>
+
+                <div class="tree advanced">
+                	<div class="box_conty">
+                    	<ul class="all_box animated bounceIn">
+                        	<li class="padding-3">
+                            	<div class="bx">Destination</div>
+                            </li>
+                            <li class="width-60">
+                            	<div class="bx height-50"></div>
+                                Forwading
+                            </li>
+                            <li class="box-border-top width-60 marginT-25"></li>
+                            <li class="width-60">
+                            	<div class="bx height-50"></div>
+                                Forwading
+                            </li>
+                            <li class="box-border-top width-50 marginT-25"></li>
+                            <li class="width-60">
+                            	<div class="bx height-50"></div>
+                                QOS
+                            </li>
+                            <li class="box-border-top width-50 marginT-25"></li>
+                            <li class="width-60">
+                            	<div class="bx height-50"></div>
+                                Routing
+                            </li>
+                            <li class="box-border-top width-50 marginT-25"></li>
+                            <li class="width-60">
+                            	<div class="bx height-50"></div>
+                                Firewall
+                            </li>
+                            <li class="box-border-top width-60 marginT-25"></li>
+                            <li class="width-60">
+                            	<div class="bx height-50"></div>
+                                Forwading
+                            </li>
+                             <li class="box-border-top width-50 marginT-25"></li>
+                             <li class="width-60">
+                            	<div class="bx height-50"></div>
+                                QOS
+                            </li>
+                             <li class="box-border-top width-50 marginT-25"></li>
+                             <li class="width-60">
+                            	<div class="bx height-50"></div>
+                                Binding/TOS
+                            </li>
+                             <li class="box-border-top width-50 marginT-25"></li>
+                             <li class="width-60">
+                            	<div class="bx height-50"></div>
+                                Firewall
+                            </li>
+                            <li class="padding-3">
+                            	<div class="bx">Source</div>
+                            </li>
+
+                        </ul>
+                        <div class="box width100 pull-left text-center mrgT15 mrgB15 animated slideInLeft"><strong>Tools</strong></div>
+                    </div>
+                    <div class="tree_body text-left animated slideInRight">
+                    	<div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-6 col-md-6 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12">
+                                        	<span class="box pull-left padding-3 sp">
+                                            	ANY
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<ul class="u_box">
+                                            	<li><a href="javascript:void(0);">Internet</a></li>
+                                                <li><a href="javascript:void(0);">Group B</a></li>
+                                                <li><a href="javascript:void(0);">Group A</a></li>
+                                                <li><a href="javascript:void(0);">Controller 1</a></li>
+                                                <li><a href="javascript:void(0);">Server 1</a></li>
+                                                <li><a class="last" href="javascript:void(0);">Client 1</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12">
+                                        	<span class="box pull-right ">
+                                            	DESTINATION
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-7 col-md-7 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                        	<span class="box pull-left padding-3 sp text-center">
+                                            	If controller, or <br> server gateway <br> mode
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-8 col-md-8 col-sm-12">
+                                        	<ul class="u_box">
+                                            	<li><a href="javascript:void(0);">Deny ALL</a></li>
+                                                <li><a href="javascript:void(0);">Allow ALL</a></li>
+                                                <li><a href="javascript:void(0);">Processes</a></li>
+                                                <li><a href="javascript:void(0);" class="last">APPs</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                        	<span class="box pull-right ">
+                                            	Source Firewall
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-8 col-md-8 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-8 col-md-8 col-sm-12">
+                                        	<ul class="u_box">
+                                            	<li><a href="javascript:void(0);">Bind ALL</a></li>
+                                                <li><a href="javascript:void(0);">Processes</a></li>
+                                                <li><a href="javascript:void(0);" class="last">APPs</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                        	<span class="box pull-right text-center">
+                                            	Source <br> Binding/TOS
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-9 col-md-9 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-7 col-md-7 col-sm-12">
+                                        	<ul class="u_box">
+                                            	<li><a href="javascript:void(0);">Shaping</a></li>
+                                                <li><a href="javascript:void(0);" class="last">Priority</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-5 col-md-5 col-sm-12">
+                                        	<span class="box pull-right text-center">
+                                            	Source QOS
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-8 col-md-8 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-12">
+                                	<span class="box  text-center radius-5">
+                                       Aliasing
+                                    </span>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-5 col-md-5 col-sm-12">
+                                        	<ul class="u_box">
+                                                <li><a href="javascript:void(0);" class="last">New DST</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-12">
+                                        	<span class="box pull-right text-center">
+                                            	Source Forwading
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tree_body text-left animated slideInLeft">
+                    	<div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-7 col-md-7 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-10 col-md-10 col-sm-12">
+                                        	<ul class="u_box">
+                                            	<li><a href="javascript:void(0);">Internet</a></li>
+                                                <li><a href="javascript:void(0);">Group B</a></li>
+                                                <li><a href="javascript:void(0);">Group A</a></li>
+                                                <li><a href="javascript:void(0);">Controller 1</a></li>
+                                                <li><a class="last" href="javascript:void(0);">Client 1</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                        	<span class="box pull-right ">
+                                            	Firewall
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-9 col-md-9 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                        	<span class="box pull-left padding-3 sp text-center">
+                                            	If controller, or <br> server gateway <br> mode
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-7 col-md-7 col-sm-12">
+                                        	<ul class="u_box">
+                                            	<li><a href="javascript:void(0);">Deny ALL</a></li>
+                                                <li><a class="last" href="javascript:void(0);">APPs</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-5 col-md-5 col-sm-12">
+                                        	<span class="box pull-right ">
+                                            	Source Firewall
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-10 col-md-10 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-6 col-md-6 col-sm-12">
+                                        	<ul class="u_box">
+                                                <li><a class="last" href="javascript:void(0);">Client 1</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                        	<span class="box pull-right ">
+                                            	Firewall
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-10 col-md-10 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-6 col-md-6 col-sm-12">
+                                        	<ul class="u_box">
+                                                <li><a class="last" href="javascript:void(0);">Client 1</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                        	<span class="box pull-right ">
+                                            	Firewall
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tree_body text-left animated slideInRight">
+                    	<div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-9 col-md-9 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-10 col-md-10 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                        	<span class="box pull-left padding-3 sp text-center">
+                                            	If controller, or <br> server gateway <br> mode
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-6 col-md-6 col-sm-12">
+                                        	<ul class="u_box">
+                                                <li><a class="last" href="javascript:void(0);">APPs</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                        	<span class="box pull-right ">
+                                            	Source Firewall
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series">
+                        	<div class="row">
+                            	<div class="col-lg-6 col-md-6 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<span class="pull-left sp"><strong>Tools</strong></span>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12">
+                                        	<span class="box pull-left padding-3 sp">
+                                            	ANY
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                	<div class="row">
+                                    	<div class="col-lg-9 col-md-9 col-sm-12">
+                                        	<ul class="u_box">
+                                            	<li><a href="javascript:void(0);">Internet</a></li>
+                                                <li><a href="javascript:void(0);">Group B</a></li>
+                                                <li><a href="javascript:void(0);">Group A</a></li>
+                                                <li><a href="javascript:void(0);">Controller 1</a></li>
+                                                <li><a href="javascript:void(0);">Server 1</a></li>
+                                                <li><a href="javascript:void(0);" class="last">Client 1</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12">
+                                        	<span class="box pull-right ">
+                                            	DESTINATION
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                	<a href="javascript:void(0);" class="btn btn-primary pull-right ad animated bounceIn">Show Simple Mode</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../assets/plugins/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script>
+$(function () {
+
+    $(".simple").show();
+	 $(".advanced").hide();
+   $(".sm").click(function(){
+	  $('.advanced').show();
+	  $('.simple').hide();
+
+   });
+
+      $(".ad").click(function(){
+	  $('.simple').show();
+	  $('.advanced').hide();
+
+   });
+
+});
+</script>
+</html>

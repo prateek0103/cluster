@@ -1,0 +1,4 @@
+No command 'ohup' found, did you mean:
+ Command 'nohup' from package 'coreutils' (main)
+ohup: command not found
+[4]+  Exit 127                ohup php test.php > lg.txt 2>&1

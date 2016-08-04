@@ -1,0 +1,133 @@
+Required Actions:
+
+Base Url: http://119.18.52.146/demovpn-new/request.php?request={action-name} (This path can be changed according to the server).
+
+Now the following list is for the action-name.
+
+dologin (Post Request):
+
+Post Fields: email, password
+
+Response: {“status”:0/1, “data”: “Message”} status = 0 not success, status = 1 success and data containing the message.
+
+user_register (Post Request):
+
+Post Fields: name, email, password
+
+Response: {“status”:0/1, “data”: “Message”} status = 0 not success, status = 1 success and data containing the message.
+
+add_cloud (Post Request):
+
+Post Fields: cloud_name, cloud_email
+
+Response: {“status”:0/1, “data”: “Message”} status = 0 not success, status = 1 success and data containing the message.
+
+add_contact (Post Request):
+
+Post Fields: contact_mail, contact_name
+
+Response: {“status”:0/1, “data”: “Message”} status = 0 not success, status = 1 success and data containing the message.
+
+addTunnel (Post Request):
+
+Post Fields: This will be a 2D post array and detected by a field containing inside the post data, that type (server/client). So the values may look like this in PHP format array(0=>array(‘name’=>’’, ‘email’=>’’, ‘type’=>’’, ‘cloud_id’=>’’, ‘bidirection’=>’’, ‘gateway’=>’’, ‘group’=>’’), 1=>array(‘name’=>.....).....)
+bidirection => 0/1/2/3
+gateway=>0/1
+group=>0-25 (i.e. 0=A, 1=B etc.)
+cloud_id=>numeric id of cloud
+
+Response: {“status”:0/1, “data”: “Message”} status = 0 not success, status = 1 success and data containing the message.
+
+delete_tunnel (Get Request):
+
+Get Fields: id
+Response: {“status”:0/1, “data”: “Message”} status = 0 not success, status = 1 success and data containing the message.
+
+Now Following All has Similar Request Type –
+gateway_change, bidirection_change, internet_change, route_change, group_change:
+
+Get Fields: id, val (id=>id of the tunnel, val=>new value)
+
+Response :
+{"status" :1, 'data':'Your request under process, please wait...', "type":"gateay_change/ bidirection_change/internet_change/route_change/group_change ", "value":{‘id’:’’, ‘val’:’’}}
+
+Now send this response to connected socket server, use the response from API to send as the value of ‘message’ attribute.
+
+Now Following All has Similar Request Type –
+add_server_clone, add_client_clone:
+
+Get Fields: id (id=>id of the tunnel)
+
+Response :
+{"status" :1, 'data':'Your request under process, please wait...', “uid”:{customer-id}, "type":" add_server_clone/ add_client_clone", "value":””}
+
+Now send this response to connected socket server, use the response from API to send as the value of ‘message’ attribute.
+
+change_tunnel:
+
+Get Fields: id, type (id=>id of the tunnel, type=>server/client)
+
+Response :
+{"status" :1, 'data':'Your request under process, please wait...', “uid”:{customer-id}, "type":" add_server_clone/ add_client_clone", "value":””}
+
+Now send this response to connected socket server, use the response from API to send as the value of ‘message’ attribute.
+
+request_real_ip:
+
+Get Fields: id (id=>id of the tunnel)
+
+Response :
+{"status" :1, 'data':'Your request under process, please wait...', "type":" request_real_ip ", "value":””}
+
+Now send this response to connected socket server, use the response from API to send as the value of ‘message’ attribute.
+
+
+save_a_tunnel (Post Request):
+This action is for apply button on a particular tunnel.
+Post Fields: id (id of the tunnel)
+
+Response: {“status”:0/1, “data”: “Message”} status = 0 not success, status = 1 success and data containing the message.
+
+save_a_tunnel (Get Request):
+This action is for apply button for all tunnels.
+
+Response: {“status”:0/1, “data”: “Message”} status = 0 not success, status = 1 success and data containing the message.
+
+About Socket Connection:
+
+To connect the socket use IP of the hosted server and the port address, by default 8880.
+
+get subnet from desktop app:
+{"type":"get_subnet", "message_type":"request", "data":{"id":id, "ip":subnet_value}}
+
+get DeV from desktop app:
+{"type":"get_DeV", "message_type":"request", "data":{"id":id, "state":dev_value, "device":device_id}}
+
+here  dev_value are:
+
+-1 = disconnected
+0 = connecting
+1 = connected
+
+get tunnels from desktop app:
+{"type":"get_tunnels", "message_type":"reply"}
+
+==============28.03.2016=============
+
+create new acl:
+{"type":"create_new_acl", "message_type":"request", "data":tunnel_id}
+
+get_acl_info:
+{"type":"get_acl_info", "message_type":"request", "data":tunnel_id}
+
+get acl value by button:
+{"type":"get_acl_val", "message_type":"request", "data":{"id":id, "type":database_table_name, "name":database_field_name}}
+
+update acl value:
+{"type":"acl_update", "message_type":"request", "data":{"id":id, "type":database_table_name, "name":database_field_name, "val":value}}
+
+check acl result stored in database
+{"type":"chk_res", "message_type":"request", "data":{"id":acl_id, "type":database_table_name, "val":database_field_name}}
+
+
+

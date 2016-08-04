@@ -1,0 +1,58 @@
+<style type="text/css">
+.custom_table_head, .custom_table_content{
+    float:left;
+    border-radius:5px;
+    border:1px solid #ccc;
+    padding:10px;
+    list-style:none;
+    margin:0px;
+
+}
+.custom_table_content{
+    margin-bottom:10px;
+}
+.custom_table_head li:first-child, .custom_table_content li:first-child{
+    min-width:auto;
+    max-width:none;
+}
+.custom_table_head li{
+    color:#333;
+    float:left;
+    margin-right:5px;
+    font-weight:bold;
+    min-width:96px;
+    max-width:96px;
+    text-align:center;
+    font-size:14px;
+}
+.custom_table_content li{
+    color:#333;
+    float:left;
+    margin-right:5px;
+    min-width:96px;
+    max-width:96px;
+    text-align:center;
+    font-size:14px;
+}
+.table_content{
+    float:left;
+    width:100%;
+    margin-top:10px;
+}
+.bg_sky{
+    background:#CFE2F3;
+}
+.bg_green{
+    background:#D9EAD3;
+}
+.bg_yellow{
+    /*background:#FFF2CC;*/
+    background:#D9EAD3;
+}
+.row_chk{
+    background: #b9b9b9 !important;
+}
+/*.list_body{
+    background-color: #939393;
+}*/
+</style>
